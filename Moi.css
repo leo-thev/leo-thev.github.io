@@ -1,0 +1,772 @@
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /*outline: solid red 1px;*/
+}
+
+body{
+    background-color:  #333333;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+.Headerbg {
+    display: flex;
+    justify-content: right;
+    padding: 30px;
+    position: relative;
+    z-index: 10;
+    gap: 10px;
+    background-image: 
+                    linear-gradient(to bottom, rgba(0, 0, 0, 0) 75%, #333333 100%),    
+                    url("BannerIMG.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 991px;
+}
+
+.Headerbg img {
+    width: 40px;
+    position: absolute;
+    left: 30px;
+    z-index: 999;
+}
+
+.HomeButton {
+    display: flex;
+}
+
+.Homebutton {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: "Host-Grotesk", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 999;
+}
+
+.Aboutbutton{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: "Host-Grotesk", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 40px;
+    z-index: 999;
+}
+
+.Contactbutton{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: "Host-Grotesk", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 40px;
+    transition: 0.4s ease;
+    z-index: 999;
+}
+
+.Homebutton,
+.Aboutbutton,
+.Contactbutton {
+    transition: all 0.4s ease;
+    border: 2px solid transparent;
+    padding: 7px;
+}
+
+.Homebutton:hover,
+.Aboutbutton:hover,
+.Contactbutton:hover {
+    border: 2px solid rgb(255, 255, 255);
+    padding: 7px;
+    border-radius: 5px;
+    z-index: 999;
+}
+
+.image {
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+.image img {
+    display: block;       
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+.mainTitle{
+    margin-bottom: -300px;
+    position: relative;
+}
+
+
+
+.banner-text {
+    position: absolute;
+    top: 23%;
+    color: white;
+    font-family: "Poppins", bold, sans-serif;
+    text-align: center;
+    border-radius: 10px;
+    z-index: 10;
+    display: block;
+    justify-content: center;
+    width: 100%;
+}
+
+.desc {
+    position: absolute;
+    font-size: 60px;
+    line-height: 60px;
+    margin: auto;
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+} 
+
+.red{
+    color: rgb(255, 194, 113);
+}
+
+.Textbox-1 {
+    margin: 20px;
+    color: white;
+    font-family: "Host-Grotesk", sans-serif;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: rgba(70, 70, 70, 0.3);
+    max-width: 200px;
+    width: 200px;
+    height: 330px;
+    flex: 1;
+}
+
+.GestionTextbox {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: flex-start;
+    padding: 40px;
+    position: absolute;
+    bottom: 10px;          
+    left: 20px;
+    flex-wrap: nowrap;
+}
+
+.icon-pad{
+  align-items: left;
+}
+
+.fancy-button {
+  width: 260px;
+  height: 160px;
+  background-color: #ffea8f;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  flex-direction: column;
+  z-index: 10;
+}
+
+.button-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.button-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 26px;
+  color: #333;
+  margin-bottom: 10px;
+  z-index: 2;
+  position: relative;
+  left: 10%;
+  top: 15%;
+  line-height: 25px;
+}
+
+
+.icon-p{
+  position: absolute;
+  transition: transform 0.4s ease;
+  left: 150px;
+  bottom: -30px;
+  animation: moveIcons 10s ease-in-out infinite;
+}
+
+.icon-g{
+  position: absolute;
+  transition: transform 0.4s ease;
+  left: 150px;
+  bottom: -30px;
+  animation: moveIcons 10s ease-in-out infinite;
+}
+
+.Containerbutton{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 15px;
+}
+
+.fancy-button2 {
+  width: 260px;
+  height: 160px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  flex-direction: column;
+}
+
+.button-content2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.button-title2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 26px;
+  color: #333;
+  margin-bottom: 10px;
+  z-index: 2;
+  position: relative;
+  left: 10%;
+  top: 15%;
+  line-height: 25px;
+}
+
+.icon-1{
+    margin-top: -500px;
+    margin-left: -50px;
+    animation: rotation 25s linear infinite;
+    z-index: 1;
+}
+
+.icon-2{
+  position: absolute;
+  top: 1000px;  
+  left: 100px; 
+  color: #333;
+  z-index: 100;
+  font-size: 200px;
+  animation: rotation 25s linear infinite;
+  z-index: 1;
+}
+
+.icon-5{
+  position: absolute;
+  top: 1100px;  
+  right: 50px;
+  font-size: 150px;
+  animation: rotation 25s linear infinite;
+  z-index: 1;
+}
+
+.footer{
+    position: relative;
+    margin-top: 80px;
+    background-color: rgb(255, 194, 113);
+    z-index: 10;
+}
+
+.FooterName{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 40px;
+    margin-left: 30px;
+    color: #333;
+    letter-spacing: 6px ;
+}
+
+.svg{
+    width: 30px;
+    height: 30px;
+    display: block;
+}
+
+.liens{
+    display: flex;
+    align-items: stretch;
+    justify-content: left;
+    padding-bottom: 80px;
+    gap: 15px;
+}
+
+.svg path{
+    fill: #333;
+}
+
+.svg:hover path{
+    fill: white;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeInAnimation 1.5s ease forwards;
+}
+
+@keyframes fadeInAnimation {
+  to {
+    opacity: 1;
+  }
+}
+
+.container {
+      display: flex;
+      min-height: 100vh;
+      padding: 50px;
+      font-family: "Host-grtesk" , sans-serif;
+      color: #727171;
+    }
+
+    .form-section, .info-section {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .form-section h2 {
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    label {
+      font-weight: 600;
+      margin-bottom: 5px;
+      display: block;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #aaa;
+      border-radius: 4px;
+    }
+
+    .half {
+      width: 48%;
+    }
+
+    textarea {
+      height: 120px;
+    }
+
+    .full {
+      width: 100%;
+    }
+
+    button {
+      background: #1d3c2d;
+      color: #fff;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: 20px;
+      transition: background 0.2s ease;
+    }
+
+    button:hover{
+      background: #11241b ;
+    }
+
+    .info-section {
+      border-left: 1px solid #ddd;
+      padding-left: 40px;
+    }
+
+    .info-section h2 {
+      margin-bottom: 10px;
+    }
+
+    .info-section p {
+      color: #777;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    .contact-info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      color: #555;
+    }
+
+    .contact-info i {
+      margin-right: 15px;
+    }
+
+    .socials {
+      margin-top: 40px;
+    }
+
+    .socials i {
+      font-size: 24px;
+      margin-right: 15px;
+      cursor: pointer;
+      color: #333;
+    }
+
+.devenezClient{
+  font-family: Poppins, sans-serif;
+  font-weight: 600; font-style: normal;
+  color: white; text-align: center;
+  font-size: 30px;
+  z-index: 10;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 1281px) {
+  .GestionTextbox{
+    position: relative;
+    justify-content: center;
+  }
+  .Headerbg{
+    background-size: 800%;
+  }
+}
+
+@media (max-width: 1281px) {
+  .desc {
+    display: none;
+  }
+  .GestionTextbox{
+    position: relative;
+    justify-content: center;
+  }
+
+  .Headerbg {
+        background-size: 100%; /* ou `80%`, selon l’effet voulu */
+        background-position: center;
+        height: 1200px; /* plus petit sur mobile */
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 95%, #333333 100%),
+  }
+
+}
+
+@media (max-width: 769px) {
+  .Headerbg {
+        background-size: 200%; /* ou `80%`, selon l’effet voulu */
+        background-position: center;
+        height: 300px; /* plus petit sur mobile */
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 95%, #333333 100%),
+  }
+
+  .Headerbg img{
+    width: 25px;
+  }
+
+  .devenezClient {
+    font-size: 25px;
+    margin-top: 30px;
+  }
+
+  .GestionTextbox{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+  }
+  .Textbox-1{
+    background-color: rgba(70, 70, 70, 0);
+    max-width: 99999px;
+    max-height: 99999px;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start;
+    margin-top: 20px;
+  }
+  .textt{
+    justify-content: right;
+    margin-left: 20%;
+    position: relative;
+  }
+
+@media (max-width: 1800px) {
+   .name {
+    display: none;
+  }
+}
+
+@media (max-width: 940px) {
+   .Headerbg {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  
+}
+@media (max-width: 478px) {
+
+   .button {
+    color: #333;
+  }
+}
+
+@media (max-width: 1024px) {
+  .gears-l {
+    display: none;
+  }
+  .gears-r {
+    display: none;
+  }
+}
+}
+
+@media (min-width: 845px) {
+  .Containerbutton {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 845px) {
+  .Containerbutton {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    flex-direction: row;
+  }
+
+  .fancy-button {
+    width: 48%;
+    margin: 10px 0;
+    flex-direction: row;
+    max-width: 200px;
+  }
+  .fancy-button2 {
+    width: 48%;
+    margin: 10px 0;
+    flex-direction: row;
+        max-width: 200px;
+  }
+  .icon-p, .icon-g{
+    left: 50%;
+  }
+}
+
+@media (min-width: 375px){
+  .vertical-line, .vertical-progress{
+    display: none;
+  }
+}
+
+.vertical-line {
+  position: absolute;
+  top: 10px;
+  bottom: 0;
+  width: 6px;
+  background-color: #ccc; /* gris de base */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  border-radius: 4px;
+  overflow: hidden;
+  height: 100%;
+  z-index: 1;
+}
+
+.vertical-progress {
+  width: 100%;
+  height: 0;
+  background-color: #ffc548; /* jaune */
+  border-radius: 4px 4px 0 0;
+  z-index: 1;
+}
+
+.button-wrapper {
+  position: relative;
+}
+
+@keyframes moveIcons {
+  0%, 100% {
+    transform:translateY(0);
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+    transform: translateX(12px);
+  }
+}
+
+@media (min-width: 769px) {
+  .Headerbg{
+    background-size: 200%; 
+    background-position: center;
+    height: 600px; 
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 95%, #333333 100%),
+  }
+}
+
+@media (min-width: 1680px) {
+  .Textbox-1{
+    max-width: 320px;
+    height: 230px
+  }
+  .fancy-button{
+    justify-content: left;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    
+  }
+  .fancy-button2{
+    justify-content: right;
+    position: relative;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    
+  }
+  .Containerbutton{
+    display: flex;
+    align-items: stretch;
+    position: relative;
+    
+  }
+}
+
+@media (min-width: 912px) {
+
+  .Headerbg {
+        background-size: 200%; /* ou `80%`, selon l’effet voulu */
+        background-position: center;
+        height: 680px; /* plus petit sur mobile */
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 95%, #333333 100%),
+  }
+
+}
+
+@media (min-width: 1281px) {
+  .Headerbg{
+    background-size: 150%;
+  }
+}
+
+@media (min-width: 1500px) {
+  .Headerbg{
+    background-size: 110%;
+  }
+}
+
+.par{
+  margin-left: 30px;
+  font-family: "Poppins", sans-serif;
+   color: #333;
+   font-size: 20px;
+}
+
+.button2{
+  margin-top: 90px;
+  text-align: center;
+}
+
+.ButtonProject{
+  position: relative;
+  z-index: 10;
+    text-decoration: none;
+    color: #333;
+    font-family: "Host-Grotesk", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    z-index: 999;
+    text-align: center;
+    transition: all 0.4s ease;
+    border: 2px solid transparent;
+    transition: all 0.4s ease;
+    border: 2px solid transparent;
+    text-align: center;
+    padding: 14px;
+    background-color: rgb(255, 194, 113);
+    border-radius: 50px;
+}
+
+.ButtonProject:hover{
+  position: relative;
+  z-index: 10;
+    border-radius: 8px;
+    z-index: 10;
+    letter-spacing: 1px;
+    margin: 5px;
+}
+
+.subtitlebox{
+  margin-top: 30px;
+  margin-left: 10px;
+  font-size: 19px;
+  font-family: "Poppins", bold, sans-serif;
+  color: #333;
+}
+
+.FooterLogo{
+  text-align: centeru;
+  width: 100%;
+}
+
+.FooterLogo img{
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  width: 445px;
+  bottom: -215px;
+   transform: translateX(-50%);
+   left: 50%;
+}
